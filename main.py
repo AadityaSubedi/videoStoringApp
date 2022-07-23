@@ -1,11 +1,9 @@
 from flask import Flask, Blueprint, send_from_directory, render_template
 
-from flask_jwt_extended import jwt_manager, JWTManager
-import jinja2
+from flask_jwt_extended import JWTManager
 from video import video_bp
 from flask_restful import Resource, Api
 from flask_cors import CORS
-from auth import user_bp
 import os
 
 
@@ -18,7 +16,6 @@ app = Flask(__name__)
 
 
 app.register_blueprint(video_bp)
-app.register_blueprint(user_bp)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['JWT_SECRET_KEY'] = 'will_edit_this_secret_key'
 app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024 *1024 #1GB 
