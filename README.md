@@ -1,6 +1,6 @@
-# Syllabus repo backend 
+# video store repo backend 
 
-Backend for syllabus repo
+Backend for video store repo
 
 ## Installation
 
