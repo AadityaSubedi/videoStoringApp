@@ -4,7 +4,7 @@ Backend for video store repo
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install syllabus.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install necessary packages.
 
 ```bash
 pip install -r requirements.txt
